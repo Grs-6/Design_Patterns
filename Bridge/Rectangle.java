@@ -18,11 +18,16 @@ public class Rectangle extends Shape {
     @Override
     void draw() {
         System.out.println("Drawing Rectangle:");
-        renderer.render(x, y, strokeColor, strokeWidth, fillColor);
+        renderer.render(x, y, strokeColor, strokeWidth, fillColor, getDimensions(), getDimensionDescriptions());
     }
 
     @Override
-    String getDimensions() {
-        return "Width: " + width + ", Height: " + height;
+    int[] getDimensions() {
+        return new int[]{width, height};
+    }
+
+    @Override
+    String[] getDimensionDescriptions() {
+        return new String[]{"Width", "Height"};
     }
 }
