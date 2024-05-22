@@ -6,5 +6,6 @@ abstract class Shape {
     }
 
     abstract void draw();
-    abstract String getDimensions();
+    abstract int[] getDimensions();
+    abstract String[] getDimensionDescriptions();
 }
