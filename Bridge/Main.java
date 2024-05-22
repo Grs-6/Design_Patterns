@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Renderer rasterRenderer = new RasterRenderer(800, 600, true, 24);
@@ -7,9 +9,9 @@ public class Main {
         Shape rectangle = new Rectangle(vectorRenderer, 10, 10, 100, 50, "blue", 3, "green");
 
         circle.draw();
-        System.out.println("Circle Dimensions: " + circle.getDimensions());
+        System.out.println("Circle Dimensions: " + Arrays.toString(circle.getDimensions()));
 
         rectangle.draw();
-        System.out.println("Rectangle Dimensions: " + rectangle.getDimensions());
+        System.out.println("Rectangle Dimensions: " + Arrays.toString(rectangle.getDimensions()));
     }
 }
