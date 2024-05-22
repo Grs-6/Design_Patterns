@@ -32,7 +32,8 @@ It then invokes the draw method on each shape, which triggers the rendering proc
 Finally, the program outputs the rendered shapes along with their attributes, demonstrating the Bridge Design Pattern's separation of abstraction and implementation.
 
 ## Output
-![Output](https://github.com/Grs-6/Design_Patterns/assets/128204314/045cce6d-bb6a-43a6-ae99-2a72d8c040df)
+![output](https://github.com/Grs-6/Design_Patterns/assets/128204314/ffebe2c9-f943-40a9-912a-e166b26b674c)
+
 
 
 
