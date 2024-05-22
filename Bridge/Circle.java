@@ -17,11 +17,16 @@ public class Circle extends Shape {
     @Override
     void draw() {
         System.out.println("Drawing Circle:");
-        renderer.render(cx, cy, strokeColor, strokeWidth, fillColor);
+        renderer.render(cx, cy, strokeColor, strokeWidth, fillColor, getDimensions(), getDimensionDescriptions());
     }
 
     @Override
-    String getDimensions() {
-        return "Radius: " + radius;
+    int[] getDimensions() {
+        return new int[]{radius};
+    }
+
+    @Override
+    String[] getDimensionDescriptions() {
+        return new String[]{"Radius"};
     }
 }
