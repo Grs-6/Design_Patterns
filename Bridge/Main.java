@@ -9,9 +9,6 @@ public class Main {
         Shape rectangle = new Rectangle(vectorRenderer, 10, 10, 100, 50, "blue", 3, "green");
 
         circle.draw();
-        System.out.println("Circle Dimensions: " + Arrays.toString(circle.getDimensions()));
-
         rectangle.draw();
-        System.out.println("Rectangle Dimensions: " + Arrays.toString(rectangle.getDimensions()));
     }
 }
