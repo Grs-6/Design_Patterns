@@ -11,7 +11,7 @@ public class RasterRenderer implements Renderer {
     }
 
     @Override
-    public void render(int x, int y, String strokeColor, int strokeWidth, String fillColor) {
+    public void render(int x, int y, String strokeColor, int strokeWidth, String fillColor, int[] dimensions, String[] dimensionDescriptions) {
         System.out.println("Raster Attributes:");
         System.out.println("  Resolution: " + width + "x" + height);
         System.out.println("  Anti-aliasing: " + (antiAliasing ? "enabled" : "disabled"));
@@ -20,5 +20,8 @@ public class RasterRenderer implements Renderer {
         System.out.println("  Stroke color: " + strokeColor);
         System.out.println("  Stroke width: " + strokeWidth);
         System.out.println("  Fill color: " + fillColor);
+        for (int i = 0; i < dimensions.length; i++) {
+            System.out.println("  " + dimensionDescriptions[i] + ": " + dimensions[i]);
+        }
     }
 }
