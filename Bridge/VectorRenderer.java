@@ -11,7 +11,7 @@ public class VectorRenderer implements Renderer {
 
     @Override
     public void render(int x, int y, String strokeColor, int strokeWidth, String fillColor) {
-        System.out.println("Common Vector Attributes:");
+        System.out.println("Vector Attributes:");
         System.out.println("  Precision: " + precision);
         System.out.println("  Scaling factor: " + scalingFactor);
         System.out.println("  Coordinate system: " + coordinateSystem);
