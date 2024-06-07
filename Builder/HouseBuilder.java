@@ -1,5 +1,5 @@
 public interface HouseBuilder {
-    void buildRooms(int rooms);
+    void buildRooms(int rooms,float roomWidth,float roomHeight);
     void buildBathrooms(int bathrooms);
     void buildGarden(boolean hasGarden);
     void buildSwimmingPool(boolean hasSwimmingPool);

@@ -1,14 +1,18 @@
 public class House {
     private int rooms;
     private int bathrooms;
-    private boolean hasGarden;
-    private boolean hasSwimmingPool;
-    private boolean hasGarage;
+    private boolean hasGarden=false;
+    private boolean hasSwimmingPool = false;
+    private boolean hasGarage = false;
+    private float roomWidth;
+    private float roomHeight;
 
     public House() {}
 
-    public void setRooms(int rooms) {
+    public void setRooms(int rooms,float roomWidth,float roomHeight) {
         this.rooms = rooms;
+        this.roomWidth =roomWidth;
+        this.roomHeight =roomHeight;
     }
 
     public void setBathrooms(int bathrooms) {
@@ -30,7 +34,7 @@ public class House {
     @Override
     public String toString() {
         return "House{" +
-                "rooms=" + rooms +
+                "rooms=" + rooms + " room width= "+ roomWidth + " room height= " + roomHeight +
                 ", bathrooms=" + bathrooms +
                 ", hasGarden=" + hasGarden +
                 ", hasSwimmingPool=" + hasSwimmingPool +

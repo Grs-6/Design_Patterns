@@ -6,15 +6,12 @@ public class HouseDirector {
     }
 
     public void constructSimpleHouse(int rooms, int bathrooms) {
-        builder.buildRooms(rooms);
+        builder.buildRooms(rooms,10,10);
         builder.buildBathrooms(bathrooms);
-        builder.buildGarden(false);
-        builder.buildSwimmingPool(false);
-        builder.buildGarage(false);
     }
 
     public void constructLuxuryHouse(int rooms,int bathrooms) {
-        builder.buildRooms(rooms);
+        builder.buildRooms(rooms,50,50);
         builder.buildBathrooms(bathrooms);
         builder.buildGarden(true);
         builder.buildSwimmingPool(true);

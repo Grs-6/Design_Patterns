@@ -6,8 +6,8 @@ public class ConcreteHouseBuilder implements HouseBuilder {
     }
 
     @Override
-    public void buildRooms(int rooms) {
-        house.setRooms(rooms);
+    public void buildRooms(int rooms,float roomWidth,float roomHeight) {
+        house.setRooms(rooms,roomWidth,roomHeight);
     }
 
     @Override
