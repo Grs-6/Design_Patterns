@@ -24,7 +24,11 @@ public class YouTubeChannel implements Subject {
     @Override
     public void notifySubscribers(String videoTitle) {
         for (Subscriber subscriber : subscribers) {
-            subscriber.update(channelName, videoTitle);
+            try {
+                subscriber.update(channelName, videoTitle);
+            } catch (Exception e) {
+                System.err.println("Failed to notify subscriber: " + subscriber + " due to an error: " + e.getMessage());
+            }
         }
     }
 
