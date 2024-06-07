@@ -1,23 +1,25 @@
-public class Main {
+class Main {
     public static void main(String[] args) {
-        Document document = new Document("Initial content\n");
-        History history = new History();
+        Document document = new Document("Design Pattern ");
+        System.out.println("Initial content: " + document.getContent());
 
-        document.write("hi\n");
-        history.addMemento(document.createMemento());  
-        document.overwrite("hello\n");
-        history.addMemento(document.createMemento()); 
+        document.write("The types include.. ");
+        System.out.println("Content after write: " + document.getContent());
 
-        document.write("world\n");
-        history.addMemento(document.createMemento()); 
+        document.save(); // Saving current state
 
-        document.restoreFromMemento(history.getMemento(0));
-        System.out.println("Restored to first memento:\n" + document.getContent()); 
+        document.write("1. creational 2. structural and 3. behavioral ");
+        System.out.println("Content after more write: " + document.getContent());
 
-        document.restoreFromMemento(history.getMemento(1));
-        System.out.println("Restored to second memento:\n" + document.getContent()); 
+        document.save(); // Saving current state
 
-        document.restoreFromMemento(history.getMemento(2));
-        System.out.println("Restored to third memento:\n" + document.getContent());
+        document.overwrite("Over writting.....");
+        System.out.println("Content after overwrite: " + document.getContent());
+
+        document.restore(0); // Restoring to first save
+        System.out.println("Content after restore from first save: " + document.getContent());
+
+        document.restore(1); // Restoring to second save
+        System.out.println("Content after restore from second save: " + document.getContent());
     }
 }
