@@ -3,11 +3,11 @@ public class Main {
         TV tv = new TV();
         Light light = new Light();
  
-        Command turnOnTVCommand = new TurnOnCommand(tv);
-        Command turnOffTVCommand = new TurnOffCommand(tv);
+        ICommand turnOnTVCommand = new TurnOnCommand(tv);
+        ICommand turnOffTVCommand = new TurnOffCommand(tv);
 
-        Command turnOnLightCommand=new TurnOnCommand(light);
-        Command turnOffLightCommand=new TurnOffCommand(light);
+        ICommand turnOnLightCommand=new TurnOnCommand(light);
+        ICommand turnOffLightCommand=new TurnOffCommand(light);
 
  
         RemoteControl remote = new RemoteControl();

@@ -1,9 +1,9 @@
 //context class
 
 public class TextEncryptor {
-    private EncryptionStrategy encryptionStrategy;
+    private IEncryptionStrategy encryptionStrategy;
 
-    public void setEncryptionStrategy(EncryptionStrategy encryptionStrategy) {
+    public void setEncryptionStrategy(IEncryptionStrategy encryptionStrategy) {
         this.encryptionStrategy = encryptionStrategy;
     }
 

@@ -1,5 +1,5 @@
 // Concrete Flyweight
-public class Font implements TextFormat {
+public class Font implements ITextFormat {
     private final String fontName; // Intrinsic state
     private final int fontSize; // Intrinsic state
     private final String color; // Intrinsic state

@@ -1,5 +1,5 @@
 // Concrete receiver 1
-public class TV implements Device {
+public class TV implements IDevice {
 	@Override
 	public void on() {
 		System.out.println("TV is now on");

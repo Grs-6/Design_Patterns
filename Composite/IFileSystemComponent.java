@@ -1,4 +1,4 @@
-public interface FileSystemComponent {
+public interface IFileSystemComponent {
     String getName();
     void setName(String name);
     void showDetails();

@@ -1,6 +1,6 @@
 //concrete strategy 1
 
-public class ReverseEncryptionStrategy implements EncryptionStrategy {
+public class ReverseEncryptionStrategy implements IEncryptionStrategy {
     @Override
     public String encrypt(String text) {
         String result = "";

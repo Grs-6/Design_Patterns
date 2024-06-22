@@ -1,5 +1,5 @@
 //startegy interface
 
-public interface EncryptionStrategy {
+public interface IEncryptionStrategy {
     String encrypt(String text);
 }

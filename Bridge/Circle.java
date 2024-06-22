@@ -4,7 +4,7 @@ public class Circle extends Shape {
     private int strokeWidth;
     private String fillColor;
 
-    public Circle(Renderer renderer, int radius, int cx, int cy, String strokeColor, int strokeWidth, String fillColor) {
+    public Circle(IRenderer renderer, int radius, int cx, int cy, String strokeColor, int strokeWidth, String fillColor) {
         super(renderer);
         this.cx = cx;
         this.cy = cy;

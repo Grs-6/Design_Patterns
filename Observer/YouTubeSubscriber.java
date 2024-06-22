@@ -1,6 +1,6 @@
 //concrete observer
 
-public class YouTubeSubscriber implements Subscriber {
+public class YouTubeSubscriber implements ISubscriber {
     private String name;
 
     public YouTubeSubscriber(String name) {

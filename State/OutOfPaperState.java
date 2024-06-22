@@ -1,6 +1,6 @@
 //state 3
 
-public class OutOfPaperState implements PrinterState {
+public class OutOfPaperState implements IPrinterState {
 
     @Override
     public void startPrint(Printer printer) {

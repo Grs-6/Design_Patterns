@@ -1,4 +1,4 @@
 // Target Interface
-public interface EbookReader {
+public interface IEbookReader {
     void read(String bookTitle);
 }

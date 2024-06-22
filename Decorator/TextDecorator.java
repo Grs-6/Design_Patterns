@@ -1,8 +1,8 @@
 //base decorator
-public abstract class TextDecorator implements Text {
-    protected Text decoratedText;
+public abstract class TextDecorator implements IText {
+    protected IText decoratedText;
 
-    public TextDecorator(Text text) {
+    public TextDecorator(IText text) {
         this.decoratedText = text;
     }
 

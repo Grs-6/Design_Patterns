@@ -2,8 +2,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class YouTubeChannel implements Subject {
-    private List<Subscriber> subscribers;
+public class YouTubeChannel implements ISubject {
+    private List<ISubscriber> subscribers;
     private String channelName;
 
     public YouTubeChannel(String channelName) {
@@ -12,18 +12,18 @@ public class YouTubeChannel implements Subject {
     }
 
     @Override
-    public void subscribe(Subscriber subscriber) {
+    public void subscribe(ISubscriber subscriber) {
         subscribers.add(subscriber);
     }
 
     @Override
-    public void unsubscribe(Subscriber subscriber) {
+    public void unsubscribe(ISubscriber subscriber) {
         subscribers.remove(subscriber);
     }
 
     @Override
     public void notifySubscribers(String videoTitle) {
-        for (Subscriber subscriber : subscribers) {
+        for (ISubscriber subscriber : subscribers) {
             try {
                 subscriber.update(channelName, videoTitle);
             } catch (Exception e) {

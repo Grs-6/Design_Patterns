@@ -1,4 +1,4 @@
 // Flyweight Interface
-public interface TextFormat {
+public interface ITextFormat {
     void applyFormat(String text, int position);
 }

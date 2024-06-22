@@ -12,7 +12,7 @@ public class Main {
 
         if(text==null){
             System.out.println("text not entered");
-            // scanner.close();
+            scanner.close();
             return;
         }
 
@@ -35,7 +35,7 @@ public class Main {
                 break;
             default:
                 System.out.println("Invalid choice!");
-                // scanner.close();
+                scanner.close();
                 return;
         }
 

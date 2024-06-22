@@ -4,8 +4,8 @@ public class YouTubeApp {
         YouTubeChannel techChannel2 = new YouTubeChannel("TEDx");
 
 
-        Subscriber subscriber1 = new YouTubeSubscriber("Alice");
-        Subscriber subscriber2 = new YouTubeSubscriber("Bob");
+        ISubscriber subscriber1 = new YouTubeSubscriber("Alice");
+        ISubscriber subscriber2 = new YouTubeSubscriber("Bob");
 
         techChannel.subscribe(subscriber1);
         techChannel.subscribe(subscriber2);

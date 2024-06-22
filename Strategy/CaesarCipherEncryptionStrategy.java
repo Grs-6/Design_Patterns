@@ -1,4 +1,4 @@
-public class CaesarCipherEncryptionStrategy implements EncryptionStrategy {
+public class CaesarCipherEncryptionStrategy implements IEncryptionStrategy {
     private static final int SHIFT = 3;
 
     @Override

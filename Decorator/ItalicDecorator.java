@@ -1,6 +1,6 @@
 //concrete decorator 2
 public class ItalicDecorator extends TextDecorator {
-    public ItalicDecorator(Text text) {
+    public ItalicDecorator(IText text) {
         super(text);
     }
 

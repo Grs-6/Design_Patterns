@@ -1,4 +1,4 @@
-public class File implements FileSystemComponent {
+public class File implements IFileSystemComponent {
     private String name;
 
     public File(String name) {

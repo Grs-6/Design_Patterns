@@ -1,4 +1,4 @@
-class Intern implements Employee {
+class Intern implements IEmployee {
     private boolean zohoPeopleAcess =false;
     private boolean sensitiveDataAccess=false;
     private String contractType="Intern";
@@ -15,7 +15,7 @@ class Intern implements Employee {
     }
 
     @Override
-    public Employee clone() {
+    public IEmployee clone() {
         return new Intern(this.role);
     }
 

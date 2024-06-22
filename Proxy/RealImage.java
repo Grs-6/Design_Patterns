@@ -2,7 +2,7 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class RealImage implements Image {
+public class RealImage implements IImage {
     private String filename;
     private final Lock lock = new ReentrantLock();
 

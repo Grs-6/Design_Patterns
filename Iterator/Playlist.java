@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlist implements Aggregate<Song> {
+public class Playlist implements IAggregate<Song> {
     private List<Song> songs = new ArrayList<>();
 
     public void addSong(Song song) {
@@ -9,7 +9,7 @@ public class Playlist implements Aggregate<Song> {
     }
 
     @Override
-    public Iterator<Song> createIterator() {
+    public IIterator<Song> createIterator() {
         return new SongIterator(songs);
     }
 }

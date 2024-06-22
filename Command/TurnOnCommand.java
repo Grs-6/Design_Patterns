@@ -1,8 +1,8 @@
 // Concrete command 1
-public class TurnOnCommand implements Command {
-	private Device device;
+public class TurnOnCommand implements ICommand {
+	private IDevice device;
 
-	public TurnOnCommand(Device device) {
+	public TurnOnCommand(IDevice device) {
 		this.device = device;
 	}
 

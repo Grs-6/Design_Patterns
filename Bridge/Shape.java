@@ -1,7 +1,7 @@
 abstract class Shape {
-    protected Renderer renderer;
+    protected IRenderer renderer;
 
-    public Shape(Renderer renderer) {
+    public Shape(IRenderer renderer) {
         this.renderer = renderer;
     }
 

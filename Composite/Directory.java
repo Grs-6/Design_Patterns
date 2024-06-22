@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Directory implements FileSystemComponent {
+public class Directory implements IFileSystemComponent {
     private String name;
-    private List<FileSystemComponent> components;
+    private List<IFileSystemComponent> components;
 
     public Directory(String name) {
         this.name = name;
@@ -20,22 +20,22 @@ public class Directory implements FileSystemComponent {
         this.name = name;
     }
 
-    public void addcomponent(FileSystemComponent component) {
+    public void addcomponent(IFileSystemComponent component) {
         components.add(component);
     }
 
-    public void removecomponent(FileSystemComponent component) {
+    public void removecomponent(IFileSystemComponent component) {
         components.remove(component);
     }
 
-    public FileSystemComponent getcomponent(int index) {
+    public IFileSystemComponent getcomponent(int index) {
         return components.get(index);
     }
 
     @Override
     public void showDetails() {
         System.out.println("Directory " + name);
-        for (FileSystemComponent component : components) {
+        for (IFileSystemComponent component : components) {
             component.showDetails();
         }
     }

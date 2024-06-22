@@ -1,6 +1,6 @@
-public class GraduateStudent implements Student {
+public class GraduateStudent implements IStudent {
     @Override
-    public void accept(Visitor visitor) {
+    public void accept(IVisitor visitor) {
         visitor.visit(this);
     }
 }

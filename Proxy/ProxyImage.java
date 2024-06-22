@@ -1,5 +1,5 @@
 // Proxy
-class ProxyImage implements Image {
+class ProxyImage implements IImage {
 	private RealImage realImage;
 	private String filename;
 

@@ -1,8 +1,8 @@
 // Invoker
 public class RemoteControl {
-	private Command command;
+	private ICommand command;
 
-	public void setCommand(Command command) {
+	public void setCommand(ICommand command) {
 		this.command = command;
 	}
 

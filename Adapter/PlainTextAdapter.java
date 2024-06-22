@@ -1,6 +1,6 @@
 // Adapter Class
 
-public class PlainTextAdapter implements EbookReader {
+public class PlainTextAdapter implements IEbookReader {
     private PlainTextReader plainTextReader;
 
     public PlainTextAdapter(PlainTextReader plainTextReader) {

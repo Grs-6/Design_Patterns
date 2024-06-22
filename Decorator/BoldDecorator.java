@@ -1,6 +1,6 @@
 //concrete decorator 1
 public class BoldDecorator extends TextDecorator {
-    public BoldDecorator(Text text) {
+    public BoldDecorator(IText text) {
         super(text);
     }
 

@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class SongIterator implements Iterator<Song> {
+public class SongIterator implements IIterator<Song> {
     private List<Song> songs;
     private int position;
 

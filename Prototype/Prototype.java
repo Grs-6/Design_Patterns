@@ -1,3 +1,3 @@
-interface Prototype {
-    Prototype clone();
+interface IPrototype {
+    IPrototype clone();
 }

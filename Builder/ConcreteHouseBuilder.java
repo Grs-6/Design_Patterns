@@ -1,4 +1,4 @@
-public class ConcreteHouseBuilder implements HouseBuilder {
+public class ConcreteHouseBuilder implements IHouseBuilder {
     private House house;
 
     public ConcreteHouseBuilder() {

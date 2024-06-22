@@ -1,4 +1,4 @@
-public class RasterRenderer implements Renderer {
+public class RasterRenderer implements IRenderer {
     private int width, height;
     private boolean antiAliasing;
     private int colorDepth;

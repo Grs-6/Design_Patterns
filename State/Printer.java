@@ -1,13 +1,13 @@
 //context class
 
 public class Printer {
-    private PrinterState state;
+    private IPrinterState state;
 
     public Printer() {
         this.state = new ReadyState();
     }
 
-    public void setState(PrinterState state) {
+    public void setState(IPrinterState state) {
         this.state = state;
     }
 

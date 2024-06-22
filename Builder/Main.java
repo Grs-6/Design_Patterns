@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        HouseBuilder builder = new ConcreteHouseBuilder();
+        IHouseBuilder builder = new ConcreteHouseBuilder();
         HouseDirector director = new HouseDirector(builder);
 
         // Construct a simple house

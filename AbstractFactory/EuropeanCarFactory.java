@@ -1,11 +1,11 @@
-public class EuropeanCarFactory implements CarFactory {
+public class EuropeanCarFactory implements ICarFactory {
     @Override
-    public Engine createEngine() {
+    public IEngine createEngine() {
         return new EuropeanEngine();
     }
 
     @Override
-    public Wheel createWheel() {
+    public IWheel createWheel() {
         return new EuropeanWheel();
     }
 }

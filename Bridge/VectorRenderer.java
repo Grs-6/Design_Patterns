@@ -1,4 +1,4 @@
-public class VectorRenderer implements Renderer {
+public class VectorRenderer implements IRenderer {
     private double precision;
     private double scalingFactor;
     private String coordinateSystem;

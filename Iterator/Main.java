@@ -5,7 +5,7 @@ public class Main {
         playlist.addSong(new Song("Song 2", "Artist 2"));
         playlist.addSong(new Song("Song 3", "Artist 3"));
 
-        Iterator<Song> iterator = playlist.createIterator();
+        IIterator<Song> iterator = playlist.createIterator();
 
         while (iterator.hasNext()) {
             Song song = iterator.next();

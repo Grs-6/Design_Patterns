@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Visitor courseEnrollmentVisitor = new CourseEnrollmentVisitor();
-        Visitor tuitionCalculationVisitor = new TuitionCalculationVisitor();
+        IVisitor courseEnrollmentVisitor = new CourseEnrollmentVisitor();
+        IVisitor tuitionCalculationVisitor = new TuitionCalculationVisitor();
 
-        Student undergraduate = new UnderGraduateStudent();
-        Student graduate = new GraduateStudent();
+        IStudent undergraduate = new UnderGraduateStudent();
+        IStudent graduate = new GraduateStudent();
 
         System.out.println("Operations for undergraduate student:");
         undergraduate.accept(courseEnrollmentVisitor);

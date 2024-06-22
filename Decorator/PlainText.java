@@ -1,5 +1,5 @@
 //concret component
-public class PlainText implements Text {
+public class PlainText implements IText {
     private String content;
 
     public PlainText(String content) {

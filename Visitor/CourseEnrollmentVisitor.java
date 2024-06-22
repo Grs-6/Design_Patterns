@@ -1,4 +1,4 @@
-public class CourseEnrollmentVisitor implements Visitor {
+public class CourseEnrollmentVisitor implements IVisitor {
     @Override
     public void visit(UnderGraduateStudent student) {
         System.out.println("Registrar is enrolling the undergraduate student in courses.");

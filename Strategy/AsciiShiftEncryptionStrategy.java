@@ -1,6 +1,6 @@
 //concrete startegy 3
 
-public class AsciiShiftEncryptionStrategy implements EncryptionStrategy {
+public class AsciiShiftEncryptionStrategy implements IEncryptionStrategy {
     @Override
     public String encrypt(String text) {
         String result = "";

@@ -1,6 +1,6 @@
 //state 1
 
-public class ReadyState implements PrinterState {
+public class ReadyState implements IPrinterState {
     @Override
     public void startPrint(Printer printer) {
         System.out.println("Printing started.");

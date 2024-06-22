@@ -4,7 +4,7 @@ public class Rectangle extends Shape {
     private int strokeWidth;
     private String fillColor;
 
-    public Rectangle(Renderer renderer,int width, int height,  int x, int y, String strokeColor, int strokeWidth, String fillColor) {
+    public Rectangle(IRenderer renderer,int width, int height,  int x, int y, String strokeColor, int strokeWidth, String fillColor) {
         super(renderer);
         this.x = x;
         this.y = y;

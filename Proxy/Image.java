@@ -1,4 +1,4 @@
 // Subject interface
-interface Image {
+interface IImage {
 	void display();
 }

@@ -1,7 +1,7 @@
 public class HouseDirector {
-    private HouseBuilder builder;
+    private IHouseBuilder builder;
 
-    public HouseDirector(HouseBuilder builder) {
+    public HouseDirector(IHouseBuilder builder) {
         this.builder = builder;
     }
 

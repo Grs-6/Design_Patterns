@@ -1,4 +1,4 @@
-interface Employee {
-    Employee clone();
+interface IEmployee {
+    IEmployee clone();
     void showAccess();
 }

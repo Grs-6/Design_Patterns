@@ -1,4 +1,4 @@
 //component interface
-public interface Text {
+public interface IText {
     String getContent();
 }
