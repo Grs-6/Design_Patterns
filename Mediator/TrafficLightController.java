@@ -1,5 +1,5 @@
 // Mediator Interface
-interface TrafficLightController {
-    void requestChangeToGreen(TrafficLight trafficLight, String direction);
-    void requestChangeToRed(TrafficLight trafficLight, String direction);
+interface ITrafficLightController {
+    void requestChangeToGreen(ITrafficLight trafficLight, String direction);
+    void requestChangeToRed(ITrafficLight trafficLight, String direction);
 }

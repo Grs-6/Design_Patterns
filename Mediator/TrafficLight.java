@@ -1,5 +1,5 @@
 // Colleague Interface
-interface TrafficLight {
+interface ITrafficLight {
     void changeToGreen();
     void changeToRed();
     void notifyTrafficControl(String message);

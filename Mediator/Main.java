@@ -3,10 +3,10 @@ public class Main {
 
         JunctionTrafficController controller = new JunctionTrafficController();
 
-        TrafficLight northLight = new NorthTrafficLight(controller);
-        TrafficLight southLight = new SouthTrafficLight(controller);
-        TrafficLight eastLight = new EastTrafficLight(controller);
-        TrafficLight westLight = new WestTrafficLight(controller);
+        ITrafficLight northLight = new NorthTrafficLight(controller);
+        ITrafficLight southLight = new SouthTrafficLight(controller);
+        ITrafficLight eastLight = new EastTrafficLight(controller);
+        ITrafficLight westLight = new WestTrafficLight(controller);
 
         controller.registerTrafficLight("North", northLight);
         controller.registerTrafficLight("South", southLight);

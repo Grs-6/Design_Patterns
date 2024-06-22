@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 // Concrete Mediator
-class JunctionTrafficController implements TrafficLightController {
-    private Map<String, TrafficLight> trafficLights;
+class JunctionTrafficController implements ITrafficLightController {
+    private Map<String, ITrafficLight> trafficLights;
     private String greenLight;
 
     public JunctionTrafficController() {
@@ -11,12 +11,12 @@ class JunctionTrafficController implements TrafficLightController {
         this.greenLight = "";
     }
 
-    public void registerTrafficLight(String direction, TrafficLight trafficLight) {
+    public void registerTrafficLight(String direction, ITrafficLight trafficLight) {
         trafficLights.put(direction, trafficLight);
     }
 
     @Override
-    public void requestChangeToGreen(TrafficLight trafficLight, String direction) {
+    public void requestChangeToGreen(ITrafficLight trafficLight, String direction) {
         if (greenLight.isEmpty()) {
             greenLight = direction;
             trafficLight.notifyTrafficControl("Changed to green.");
@@ -29,7 +29,7 @@ class JunctionTrafficController implements TrafficLightController {
     }
 
     @Override
-    public void requestChangeToRed(TrafficLight trafficLight, String direction) {
+    public void requestChangeToRed(ITrafficLight trafficLight, String direction) {
         if (greenLight.equals(direction)) {
             greenLight = "";
             trafficLight.notifyTrafficControl("Changed to red.");

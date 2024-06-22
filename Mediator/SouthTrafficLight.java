@@ -1,8 +1,8 @@
 // Concrete Colleague
-class SouthTrafficLight implements TrafficLight {
-    private TrafficLightController mediator;
+class SouthTrafficLight implements ITrafficLight {
+    private ITrafficLightController mediator;
 
-    public SouthTrafficLight(TrafficLightController mediator) {
+    public SouthTrafficLight(ITrafficLightController mediator) {
         this.mediator = mediator;
     }
 
