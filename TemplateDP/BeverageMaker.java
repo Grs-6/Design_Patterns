@@ -1,5 +1,3 @@
-package TemplateDP;
-
 abstract class BeverageMaker {
     // Template method defining the overall process
     public final void makeBeverage() {

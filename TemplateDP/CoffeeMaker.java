@@ -1,4 +1,3 @@
-package TemplateDP;
 class CoffeeMaker extends BeverageMaker {
     // Implementing abstract methods
     @Override
