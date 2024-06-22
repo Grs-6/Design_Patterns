@@ -13,6 +13,8 @@ public class FontFactory {
             font = new Font(fontName, fontSize, color);
             fontPool.put(key, font);
             System.out.println("Creating font: " + fontName + " with size " + fontSize + " and color " + color);
+        }else{
+            System.out.println("Refering and utilizing the existing object and style");
         }
 
         return font;

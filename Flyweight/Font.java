@@ -13,6 +13,6 @@ public class Font implements TextFormat {
     @Override
     public void applyFormat(String text, int position) {
         System.out.println("Applying font " + fontName + " with size " + fontSize + " and color " + color +
-                " to text at position " + position + ": " + text);
+                " to text at position " + position + ": " + text+"\n");
     }
 }
