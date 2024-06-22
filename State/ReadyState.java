@@ -1,25 +1,19 @@
 //state 1
 
 public class ReadyState implements PrinterState {
-    private Printer printer;
-
-    public ReadyState(Printer printer) {
-        this.printer=printer;
-    }
-
     @Override
-    public void startPrint() {
+    public void startPrint(Printer printer) {
         System.out.println("Printing started.");
-        printer.setState(new PrintingState(printer));
+        printer.setState(new PrintingState());
     }
 
     @Override
-    public void cancelPrint() {
+    public void cancelPrint(Printer printer) {
         System.out.println("No print job to cancel.");
     }
 
     @Override
-    public void loadPaper() {
+    public void loadPaper(Printer printer) {
         System.out.println("Printer already has paper.");
     }
 }

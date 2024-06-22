@@ -1,25 +1,20 @@
 //state 3
 
 public class OutOfPaperState implements PrinterState {
-    private Printer printer;
-
-    public OutOfPaperState(Printer printer) {
-        this.printer=printer;
-    }
 
     @Override
-    public void startPrint() {
+    public void startPrint(Printer printer) {
         System.out.println("Cannot print. The printer is out of paper.");
     }
 
     @Override
-    public void cancelPrint() {
+    public void cancelPrint(Printer printer) {
         System.out.println("No print job to cancel.");
     }
 
     @Override
-    public void loadPaper() {
+    public void loadPaper(Printer printer) {
         System.out.println("Paper loaded.");
-        printer.setState(new ReadyState(printer));
+        printer.setState(new ReadyState());
     }
 }

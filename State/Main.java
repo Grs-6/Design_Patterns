@@ -12,7 +12,7 @@ public class Main {
         printer.startPrint(); 
         printer.cancelPrint();
 
-        printer.setState(new OutOfPaperState(printer));
+        printer.setState(new OutOfPaperState());
 
         printer.startPrint(); 
         printer.loadPaper();

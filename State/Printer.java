@@ -4,7 +4,7 @@ public class Printer {
     private PrinterState state;
 
     public Printer() {
-        this.state = new ReadyState(this);
+        this.state = new ReadyState();
     }
 
     public void setState(PrinterState state) {
@@ -12,14 +12,14 @@ public class Printer {
     }
 
     public void startPrint() {
-        state.startPrint();
+        state.startPrint(this);
     }
 
     public void cancelPrint() {
-        state.cancelPrint();
+        state.cancelPrint(this);
     }
 
     public void loadPaper() {
-        state.loadPaper();
+        state.loadPaper(this);
     }
 }

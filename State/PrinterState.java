@@ -1,7 +1,7 @@
 //state Interface
 
 public interface PrinterState {
-    void startPrint();
-    void cancelPrint();
-    void loadPaper();
+    void startPrint(Printer printer);
+    void cancelPrint(Printer printer);
+    void loadPaper(Printer printer);
 }
